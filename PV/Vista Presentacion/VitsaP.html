@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VistaP</title>
+    <link rel="stylesheet" href="estilo.css ">
+</head>
+
+<body>
+    <div>
+        <div class="container">
+            <a href="#" class="button" id="button">Login</a>
+        </div>
+    
+        <div class="popup">
+            <div class="popupC">
+                <div>
+                <img src="img/close.png" alt="close" class="close">
+                <img id="user" src="img/user1.png" alt="user">
+                <input type="text" placeholder="Username">
+                <input type="password" placeholder="Password">
+                </div>
+                <div id="boton">
+                <a href="#" class="button">Login</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById("button").addEventListener("click", function () {
+            document.querySelector(".popup").style.display = "flex"
+        })
+
+        document.querySelector(".close").addEventListener("click", function () {
+            document.querySelector(".popup").style.display = "none";
+        })
+    </script>
+
+</body>
+
+</html>
